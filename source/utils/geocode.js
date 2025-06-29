@@ -3,7 +3,8 @@ const request = require('request')
 (A callback is a function passed as an argument to another function, which is called (or invoked) later, usually after some operation is completed (like a task, event, or async call))
 so we difine that call back when we call this function in wich its getting argument data and error*/
 const geocode = (address,callback) => {
-    const apiKey='caf7268f3f684f7b9640f127e094f526'
+    const apiKey = process.env.OPENCAGE_API_KEY;
+
     const url2=`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${apiKey}`;
 
     request({url: url2,json: true},(error,response)=>{

@@ -3,7 +3,10 @@ request = require('request')
 //in this file i am es6 shoethand method and destructuring
 
 const forcast = (latitude,longitude,callback)=>{
-    const url =`http://api.weatherstack.com/current?access_key=207585dea79cdea56aee83b933f59672&query=${latitude},${longitude}`
+
+    const apikey = process.env.WEATHERSTACK_API_KEY;
+
+    const url =`http://api.weatherstack.com/current?access_key=${apikey}&query=${latitude},${longitude}`
 
     request({url ,json: true},(error,{body})=>{
 

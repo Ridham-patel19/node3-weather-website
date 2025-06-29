@@ -3,6 +3,8 @@ const express = require('express')
 const hbs = require('hbs')
 const forcast = require('./utils/forcast')
 const geocode = require('./utils/geocode')
+require('dotenv').config();
+
 
 //define paths for expresss config
 const publicdirpath=path.join(__dirname,'../public')
