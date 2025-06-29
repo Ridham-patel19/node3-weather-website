@@ -1,0 +1,232 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #ececec;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+}
+
+h1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #4a4949;
+
+}
+
+ nav{
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: rgb(137, 80, 137);
+  background-color: #e5e5e5;
+  margin-left: 0;
+  align-items: center;
+ box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+ a{
+  margin-right: 25px;
+  text-decoration: none;
+ 
+}
+
+ a:hover{
+  box-shadow: 2px 2px rgb(175, 174, 174);
+}
+
+/* Push footer to bottom */
+footer {
+  position: absolute;
+height: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(137, 80, 137);
+  background-color: #e5e5e5;
+  margin-left: 0;
+  align-items: center;
+ box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.05);
+ margin-top: 100%;
+ width: 100%;
+
+}
+
+#img img {
+  max-width: 100%;          
+  height: auto;            
+  display: block;          
+  border-radius: 12px;     
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  margin: 20px auto;        
+  transition: transform 0.3s ease; 
+  border-radius: 50%;
+  width: 220px;
+  margin-top: 50px;
+  height: 230px;
+  width: 240px;
+  margin-top: -3px;
+   
+  
+}
+
+#img img:hover {
+  transform: scale(1.03);   /* Slight zoom on hover */
+}
+
+
+#form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+ 
+}
+
+#form input{
+   max-width: 600px;
+   min-width: 300px;
+  height: 40px;
+  border-radius: 3px;
+  border-color: white;
+  box-shadow: #ececec;
+   width: 300px;
+  padding-left: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+#form input:focus{
+    border-color: #cbcbcb; /* Indigo border on focus */
+  box-shadow: 0 0 5px rgba(161, 161, 161, 0.4);
+}
+
+#form input:hover{
+  box-shadow: 0 0 5px rgba(118, 117, 117, 0.4);
+}
+
+#form button{
+    height: 40px;
+  border-radius: 3px;
+  border-color: white;
+  box-shadow: #ececec;
+   width: 80px;
+  padding-left: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 5px;
+}
+
+#form button:active{
+  background-color: #c5c5c5;
+}
+
+#form button:hover{
+  background-color: #b5b5b6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+#abt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#abt-self{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a4949;
+    margin-right: 5px;
+
+}
+
+.contactinfo{
+    color: #4a4949;
+    padding-left: 20px;
+    font-size: medium;
+    margin-top: 20px;
+    background-color:  #e5e5e5;
+    
+}
+
+
+
+.outputdata1{
+   max-width: 300px;
+
+  background: linear-gradient(to right, #dfe9f3, #ffffff);  
+  border-radius: 15px;
+  padding: 20px 25px;
+  
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px auto;
+  transition: transform 0.3s ease;
+}
+
+.hidden{
+  display: none;
+}
+
+.outputdata{
+  transform:scale(1.05)
+}
+
+#msg1{
+     font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#msg-2{
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.msg-3{
+  height: 23px;
+ max-width: 300px; 
+  border-radius: 5px;
+  background: linear-gradient(to right,#ffffff,  #dfe9f3);
+  
+}
+
+
+
+
+.loading {
+  max-width: 300px;
+  background: repeating-linear-gradient(
+    45deg,
+    #f0f0f0,
+    #f0f0f0 10px,
+    #e0e0e0 10px,
+    #e0e0e0 20px
+  );
+  color: #888;
+  animation: pulse 1s infinite;
+
+  
+  border-radius: 15px;
+  padding: 20px 25px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px auto;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
