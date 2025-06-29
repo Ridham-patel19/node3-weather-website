@@ -138,9 +138,11 @@ app.use((req, res) => {
 
 
 //This starts the server and makes it listen on port 3000
-app.listen(3000, ()=>{
-    console.log('hello from the server')
-})
+const port = process.env.PORT || 3000; // Use Render's dynamic port or 3000 locally
+app.listen(port, () => {
+    console.log('Server is running on port ' + port);
+});
+
 
 
 
