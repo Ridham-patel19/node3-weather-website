@@ -1,4 +1,4 @@
-console.log('this is browser side js');
+
 
 
 
